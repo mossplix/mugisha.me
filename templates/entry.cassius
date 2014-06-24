@@ -1,0 +1,18 @@
+.right
+        float: right
+
+.comment blockquote
+        padding: 0.5em
+        margin-left: 0
+        margin-top: 0.2em
+        border-radius: 10px
+
+.comment blockquote p
+        padding: 0
+        margin: 0 !important
+
+.comment:nth-child(2n+1) blockquote
+        background-color: #dcdcdc
+
+.comment:nth-child(2n) blockquote
+        background-color: #efefef

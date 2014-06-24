@@ -1,0 +1,8 @@
+<div id="post-area" class="col">
+    <article id="post-1550" class="post-1550 post">
+        <div class="post-content">
+            <h1> #{articleTitle article}
+            <article> #{articleContent article}
+            <hr>
+            <a href=@{BlogR}>
+                Go to article list.

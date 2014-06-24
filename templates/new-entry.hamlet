@@ -1,0 +1,5 @@
+<h2>New Entry
+<form enctype="#{enctype}" method="post">
+      ^{form}
+      <p>
+          <input type="submit" value="Save">

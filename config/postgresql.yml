@@ -1,0 +1,24 @@
+Default: &defaults
+  user: mossplix
+  password: postgres
+  host: localhost
+  port: 5432
+  database: sorace
+  poolsize: 10
+
+Development:
+  <<: *defaults
+
+Testing:
+  database: sorace_test
+  <<: *defaults
+
+Staging:
+  database: sorace_staging
+  poolsize: 100
+  <<: *defaults
+
+Production:
+  database: sorace_production
+  poolsize: 100
+  <<: *defaults

@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-md-8">
+            <p class="dark">
+                <img src="/static/me.jpg">
+
+        <div class="col col-md-4" style="font-size:16px;">
+            <h5 style="font-size:16px;font-weight:200;">
+                 \Hi I am Moses. I build software. I am  a Co-founder and CTO of <a href="http://sparkpl.ug">Sparkplug</a>, a tech startup based in Uganda, East Africa.
+            <ul>
+                <li style="list-style-type: none;">
+                    <i class="icon-tiny icon-envelope accent-color">
+                    <a href="mailto:mugisha@sparkpl.ug">
+                        mugisha@sparkpl.ug
+                <li style="list-style-type: none;">
+                    <i class="icon-tiny icon-comment accent-color">
+                    <a href="tel:256794631873">
+                        +256 (0)794631873
+                <li style="list-style-type: none;">
+                    <i class="icon-tiny icon-linkedin-sign accent-color">
+                    <a href="http://ug.linkedin.com/in/mugishamoses">
+                        LinkedIn
+                <li style="list-style-type: none;">
+                    <i class="icon-tiny icon-twitter accent-color">
+                    <a href="http://twitter.com/mossplix">
+                        Twitter
+
+
+
+
+
+
+

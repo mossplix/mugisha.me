@@ -1,0 +1,113 @@
+@import url("style.css");
+
+
+/*new portfolio type*/
+
+body {
+    max-width:   100%;
+    background: white;
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+    position: relative;
+}
+
+h1 { font-size: 55px; line-height: 65px; margin-bottom: 30px; font-family: 'OpenSansbold'; }
+
+h2 {
+    font-size: 45px;
+    line-height: 55px !important;
+    margin-bottom: 40px;
+    font-family: 'OpenSansbold';
+}
+
+h3 {
+    font-size: 28px;
+    line-height: 38px;
+    margin-bottom: 20px !important;
+    font-family: 'OpenSansbold';
+}
+
+
+h4 {
+
+    font-size:20px;
+    line-height:30px;
+    font-family: 'OpenSansbold';
+}
+
+h5 {
+
+    font-size:25px;
+    line-height:35px;
+    margin-bottom:15px;
+    color: #444;
+    font-weight: normal;
+    font-family: 'OpenSansSemiBold';
+    letter-spacing: -1px;
+}
+
+h6 {
+
+    font-size:20px;
+    line-height:28px;
+    color: #444;
+    font-weight: normal;
+    font-family: 'OpenSansLight';
+    letter-spacing: 0px;
+}
+
+p { font-size:17px; line-height: 29px; margin-bottom:7px; padding-bottom: 20px; }
+
+ul {
+    font-size: 17px; line-height: 27px;
+}
+
+ul > li {
+    list-style-position: outside !important;
+    margin-left: 10px;
+}
+
+/*media queries*/
+
+@media only screen and (min-width: 691px) and (max-width: 2000px) {
+
+    h2 { font-size: 45px !important;}
+    h3 { font-size: 25px !important; line-height: 35px !important;}
+    h4 { font-size: 20px !important;}
+
+}
+
+@media only screen and (min-width:0px) and (max-width : 690px) {
+
+    .container {max-width: 290px !important;}
+
+    h1 { font-size: 45px; line-height: 55px;}
+    h2 { font-size: 35px !important; line-height: 45px !important;}
+    h3 { font-size: 25px !important; line-height: 35px !important;}
+    h4 { font-size: 20px !important;}
+    h5 { font-size: 20px; line-height: 30px;}
+}
+
+
+/* Removes the view larger option from portfolio thumbnails */
+
+.portfolio-items .col .work-item .work-info a {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -9999px!important;
+    top: 0px;
+    left: 0px;
+    background-color: transparent!important;
+    border-radius: 0px!important;
+}
+
+.portfolio-items .col .work-item .work-info a.pp {
+    display: none!important;
+}
+
+
+a{
+    text-decoration:none;
+}

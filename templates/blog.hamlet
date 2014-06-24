@@ -1,0 +1,7 @@
+<div class="col-md-12">
+    <h2>Moses's  Posts
+    $forall Entity _ post <- posts
+      $maybe Entity _ category <- findCat post cats
+        <a href="@{EntryR (categoryName category) (entryIdent post)}">#{entryTitle post}
+        \ in #{categoryName category} am #{entryDate post}
+        <br>

@@ -1,0 +1,26 @@
+<div id="post-area" class="col">
+    $if null articles
+        <p> There are no articles in the blog
+    $else
+
+
+        $forall Entity articleId article <- articles
+            <div class="post-content">
+                <h2 class="title">
+                    #{articleTitle article}
+
+                <article  class="post-1550 post">
+                     <div class="post-meta ">
+                        <div class="date">
+
+                            <span class="month">
+                                June
+
+                    <div class="content-inner">
+                        #{articleContent article}
+                <a href=@{ArticleR articleId} > #{articleTitle article}
+    <hr>
+      <form method=post enctype=#{enctype}>
+        ^{articleWidget}
+        <div>
+            <input type=submit value="Post New Article">

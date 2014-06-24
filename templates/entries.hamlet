@@ -1,0 +1,39 @@
+<ul #tag-list>
+   <li>_{MsgTags}: #
+  $forall Entity _ tag' <- tags
+    <li>
+     $with activeTags <- sort $ toggleTag (tagName tag') tagNames
+       $if null activeTags
+          <a :elem (tagName tag') tagNames:class=active href="@{EntriesR catName}">#{tagName tag'}
+       $else
+          <a :elem (tagName tag') tagNames:class=active href="@{EntriesByTagR catName activeTags}">#{tagName tag'}
+
+<span #new-entry>
+  $maybe _ <- mu
+       <a href="@{NewEntryR catName}">_{MsgAddNewEntry}
+
+<div .entries>
+  $forall Entity eid entry <- entries
+      <a .entry href=@{EntryR catName (entryIdent entry)}>
+        <span .right>
+               <span .date>_{MsgPublishedOn (entryDate entry)}
+               <br>
+               <span .comment-count>
+                 $with mcount <- lookup eid comments
+                  $maybe count' <- mcount
+                    _{MsgCommentCount count'}
+                  $nothing
+                    _{MsgNoComments}
+                \ / #
+               <span .tags>
+                   _{MsgTags}: #
+                   $forall Entity _ tag <- tagsForEntry eid tagging
+                      #{tagName tag} #
+        <span .left>
+             <span .title>#{entryTitle entry}
+             <br>
+             <span .recap>#{entryRecap entry}
+
+
+
+
