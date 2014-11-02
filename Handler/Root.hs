@@ -2,12 +2,12 @@ module Handler.Root where
 
 import           Data.List (find)
 import           Import
-
+import           Yesod.Markdown
 getRootR :: Handler Html
 getRootR = do
   posts <- runDB $ select $ from $ \e -> do
                    orderBy [desc (e ^. EntryDate)]
-                   limit 5
+                   limit 6
                    return e
   cats <- runDB $ select $ from $ \c -> do
                   orderBy [asc (c ^. CategoryName)]

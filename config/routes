@@ -10,6 +10,7 @@
 /impressum                                              ImpressumR GET
 /login                                                  AuthR Auth getAuth
 /admin                                                  AdminR GET POST
+/about                                                  AboutR GET
 /admin/delete/#CategoryId                               DeleteCategoryR GET
 /category/#Text                                         EntriesR GET
 /category/#Text/tags/*Texts                             EntriesByTagR GET

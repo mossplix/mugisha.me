@@ -2,7 +2,7 @@ NoComments: No comments
 Submit: Submit
 NewComment: Leave a Reply
 Cancel: Cancel
-Reply: Antworten
+Reply: Reply
 Anonymous: Anonymous
 Add: Add
 DeleteCategories: Delete categories

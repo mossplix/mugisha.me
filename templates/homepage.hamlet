@@ -1,10 +1,15 @@
 <div class="container">
+    <h1>
+        About Moses
+    <br>
     <div class="row">
         <div class="col col-md-8">
-            <p class="dark">
-                <img src="/static/me.jpg">
+             <img src="/static/me.jpg" >
+
 
         <div class="col col-md-4" style="font-size:16px;">
+            <div>
+
             <h5 style="font-size:16px;font-weight:200;">
                  \Hi I am Moses. I build software. I am  a Co-founder and CTO of <a href="http://sparkpl.ug">Sparkplug</a>, a tech startup based in Uganda, East Africa.
             <ul>

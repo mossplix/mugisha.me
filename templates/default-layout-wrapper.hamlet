@@ -19,7 +19,8 @@ $newline never
         \<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
         \<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
         \<link rel='stylesheet' id='font-awesome-css'  href='/static/css/font-awesome.min.css' type='text/css' media='all' />
-        \<link rel='stylesheet' id='main-styles-css'  href='/static/style.css' type='text/css' media='all' />
+        \<link rel='stylesheet' id='main-styles-css'  href='/static/style2.css' type='text/css' media='all' />
+        \<link rel='stylesheet' id='main-styles-css'  href='/static/css/gray.css' type='text/css' media='all' />
 
         \<link rel='stylesheet' id='responsive-css'  href='/static/css/responsive.css' type='text/css' media='all' />
 
@@ -54,7 +55,10 @@ $newline never
                                             Home
                                     <li class="menu-item">
                                          <a href="/blog/">
-                                            Blog
+                                            All Posts
+                                    <li class="menu-item">
+                                        <a href="/about/">
+                                            About
                                     <li class="menu-item">
                                         <a href="/projects/">
                                             Projects

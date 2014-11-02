@@ -1,113 +1,438 @@
-@import url("style.css");
+.container-wrap, .project-title {
+    background-color: #F5F5F5;
+    position: relative;
+    z-index: 10;
+    margin-top: -55px;
+    padding-top: 7.8em;
+    padding-bottom: 40px;
+}
 
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('css/fonts/OpenSans-Light-webfont.eot');
+    src: url('css/fonts/OpenSans-Light-webfont.eot@') format('embedded-opentype'),
+    url('css/fonts/OpenSans-Light-webfont.woff') format('woff'),
+    url('css/fonts/OpenSans-Light-webfont.ttf') format('truetype'),
+    url('css/fonts/OpenSans-Light-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
-/*new portfolio type*/
+}
+
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('css/fonts/OpenSans-Regular-webfont.eot');
+    src: url('css/fonts/OpenSans-Regular-webfont.eot@') format('embedded-opentype'),
+    url('css/fonts/OpenSans-Regular-webfont.woff') format('woff'),
+    url('css/fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+    url('css/fonts/OpenSans-Regular-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansSemibold';
+    src: url('css/fonts/OpenSans-Semibold-webfont.eot');
+    src: url('css/fonts/OpenSans-Semibold-webfont.eot@') format('embedded-opentype'),
+    url('css/fonts/OpenSans-Semibold-webfont.woff') format('woff'),
+    url('css/fonts/OpenSans-Semibold-webfont.ttf') format('truetype'),
+    url('css/fonts/OpenSans-Semibold-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('css/fonts/OpenSansBold-webfont.eot');
+    src: url('css/fonts/OpenSansBold-webfont.eot@') format('embedded-opentype'),
+    url('css/fonts/OpenSansBold-webfont.woff') format('woff'),
+    url('css/fonts/OpenSansBold-webfont.ttf') format('truetype'),
+    url('css/fonts/OpenSansBold-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 body {
-    max-width:   100%;
-    background: white;
-    font-family: 'Open Sans', sans-serif;
-    color: #555;
+    font-size: 12px;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'OpenSansRegular';
+    background-color: #1F1F1F;
+    line-height: 22px;
+}
+
+.sf-menu ul a:focus ,
+.sf-menu ul a:hover ,
+.sf-menu ul a:active ,
+.sf-menu ul li:hover > a ,
+.sf-menu ul li.sfHover > a  {
+    color: #27CFC3;
+}
+
+.sf-menu, .sf-menu * {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+}
+.sf-menu {
+    line-height: 1;
+}
+.sf-menu ul {
+    position: absolute;
+    top: -999em;
+    width: 15em;
+}
+.sf-menu ul li, .sf-menu ul li li {
+    font-size: 12px;
+    width: 100%;
+}
+.sf-menu ul li:last-child a {
+    border-bottom: medium none;
+}
+.sf-menu li:hover {
+    visibility: inherit;
+}
+.sf-menu li {
+    float: left;
+    line-height: 12px!important;
+    font-size: 12px!important;
     position: relative;
 }
-
-h1 { font-size: 55px; line-height: 65px; margin-bottom: 30px; font-family: 'OpenSansbold'; }
-
-h2 {
-    font-size: 45px;
-    line-height: 55px !important;
-    margin-bottom: 40px;
-    font-family: 'OpenSansbold';
-}
-
-h3 {
-    font-size: 28px;
-    line-height: 38px;
-    margin-bottom: 20px !important;
-    font-family: 'OpenSansbold';
-}
-
-
-h4 {
-
-    font-size:20px;
-    line-height:30px;
-    font-family: 'OpenSansbold';
-}
-
-h5 {
-
-    font-size:25px;
-    line-height:35px;
-    margin-bottom:15px;
-    color: #444;
-    font-weight: normal;
-    font-family: 'OpenSansSemiBold';
-    letter-spacing: -1px;
-}
-
-h6 {
-
-    font-size:20px;
-    line-height:28px;
-    color: #444;
-    font-weight: normal;
-    font-family: 'OpenSansLight';
-    letter-spacing: 0px;
-}
-
-p { font-size:17px; line-height: 29px; margin-bottom:7px; padding-bottom: 20px; }
-
-ul {
-    font-size: 17px; line-height: 27px;
-}
-
-ul > li {
-    list-style-position: outside !important;
-    margin-left: 10px;
-}
-
-/*media queries*/
-
-@media only screen and (min-width: 691px) and (max-width: 2000px) {
-
-    h2 { font-size: 45px !important;}
-    h3 { font-size: 25px !important; line-height: 35px !important;}
-    h4 { font-size: 20px !important;}
-
-}
-
-@media only screen and (min-width:0px) and (max-width : 690px) {
-
-    .container {max-width: 290px !important;}
-
-    h1 { font-size: 45px; line-height: 55px;}
-    h2 { font-size: 35px !important; line-height: 45px !important;}
-    h3 { font-size: 25px !important; line-height: 35px !important;}
-    h4 { font-size: 20px !important;}
-    h5 { font-size: 20px; line-height: 30px;}
-}
-
-
-/* Removes the view larger option from portfolio thumbnails */
-
-.portfolio-items .col .work-item .work-info a {
-    position: absolute;
+.sf-menu a {
     display: block;
+    position: relative;
+}
+.sf-menu li:hover ul, .sf-menu li.sfHover ul {
+    left: 0;
+    top: 33px;
+    z-index: 999;
+}
+ul.sf-menu li:hover li ul, ul.sf-menu li.sfHover li ul {
+    top: -999em;
+}
+ul.sf-menu li li:hover ul, ul.sf-menu li li.sfHover ul {
+    left: 15em;
+    top: 0px;
+}
+ul.sf-menu li li:hover li ul, ul.sf-menu li li.sfHover li ul {
+    top: -999em;
+}
+ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul {
+    left: 15em;
+    top: 0;
+}
+.sf-menu .sf-with-ul a {
+    min-width: 1px;
+    padding-right: 16px!important;
+}
+
+header#top .sf-menu li ul li a {
+    font-size: 12px;
+    line-height: 13px;
+    color: #ccc;
+    transition: none;
+    background-color: #1F1F1F;
+}
+
+.sf-menu li ul li a:hover, .sf-menu li ul li.sfHover > a {
+    color: #27CFC3;
+    background-color: #313233!important;
+}
+
+.sf-menu li ul li.sfHover > a .sf-sub-indicator [class^="icon-"] {
+    color: #27CFC3;
+}
+
+.sf-menu li ul li .sf-sub-indicator {
+    right: 14px;
+    left: auto;
+    top: 14px;
+    display: block;
+    position: absolute;
+}
+
+.sf-menu li ul, .sf-menu li li ul {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.sf-menu li li ul {
+    left: 15em!important;
+}
+
+.sf-menu {
+    float: right;
+}
+.sf-menu a {
+    margin: 0 1px;
+    padding: 0.75em 1em 32px;
+    text-decoration: none;
+}
+.sf-menu ul li {
+    font-weight: normal;
+}
+.sf-menu .sfHover ul li a, .sf-menu .sfHover ul li li a {
+    box-shadow: none;
+}
+.sf-menu ul li a:focus, .sf-menu ul li a:hover, .sf-menu ul li a:active, .sf-menu ul li li a:focus, .sf-menu ul li li a:hover, .sf-menu ul li li a:active {
+    border-radius: 0 0 0 0;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+header#top #toggle-nav {
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    display: none;
+    width: 36px;
+    height: 28px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+header#top #toggle-nav i {
+    background-color: transparent!important;
+    color: #a9a9a9;
+    line-height: 34px;
+    font-size: 18px;
+}
+
+#header-space {
+    height: 90px;
+}
+
+#header-outer {
     width: 100%;
-    height: 100%;
-    text-indent: -9999px!important;
     top: 0px;
     left: 0px;
+    position: fixed;
+    overflow: visible!important;
+    padding: 28px 0px 0px 0px;
+    background-color:#fff;
+    z-index: 9998;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.33);
+    -moz-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.33);
+    -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.33);
+
+}
+.site-logo {
+    font-size: 400%;
+    font-weight: 100;
+    margin: 0;
+    color: #1f8dd6;
+}
+.site-logo-dark {
+    font-size: 400%;
+    font-weight: 200;
+    margin: 0;
+    color: #666;
+}
+
+label span {
+    color: #27CFC3;
+}
+
+#footer-outer {
+    color: #ccc;
+    position: relative;
+    z-index: 10;
+    background-color: #313233;
+}
+
+#footer-outer .row {
+    padding: 55px 0px;
+    margin-bottom: 0px;
+}
+
+#footer-outer .widget h4 {
+    color: #777;
+    font-size: 12px;
+    font-family: 'OpenSansbold';
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#footer-outer .widget {
+    margin-bottom: 30px;
+}
+
+#footer-outer .widget.widget_categories ul ul, #footer-outer .widget.widget_pages ul ul, #footer-outer .widget.widget_nav_menu ul ul {
+    margin: 0px 0px 0px 0px!important;
+    padding: 0px 0px 0px 20px;
+}
+
+#footer-outer .widget.widget_categories li, #footer-outer .widget.widget_pages li, #footer-outer .widget.widget_nav_menu li {
+    border-bottom: 0px!important;
+    padding: 0px!important;
+}
+
+#footer-outer .widget.widget_categories li a, #footer-outer .widget.widget_pages li a, #footer-outer .widget.widget_nav_menu li a {
+    padding: 8px 0px;
+    display: block;
+    border-bottom: 1px solid #444444;
+}
+
+#footer-outer .widget.widget_categories > ul > li:first-child > a, #footer-outer .widget.widget_pages > ul > li:first-child > a, #footer-outer .widget.widget_nav_menu > ul > li:first-child > a {
+    padding-top: 0px;
+}
+
+#footer-outer .span_3 .widget:last-child {
+    margin-bottom: 0px;
+}
+
+#footer-outer a {
+    color: #ccc;
+}
+
+#footer-outer a:hover {
+    color: #27CFC3;
+}
+
+#footer-outer .nectar-button:hover {
+    color: #fff!important;
+}
+
+#footer-outer .widget ul li {
+    margin-bottom: 7px;
+}
+
+#footer-outer #footer-widgets {
+    border-bottom: 1px solid #212121;
+}
+
+#footer-outer #copyright {
+    padding: 20px 0px;
+    font-size: 12px;
+    background-color: #1f1f1f;
+    border-top: 1px solid #3a3a3a;
+    color: #777;
+}
+
+#footer-outer #copyright li {
+    float: left;
+    margin-left: 20px;
+}
+
+#footer-outer #copyright .container div:last-child {
+    margin-bottom: 0px;
+}
+
+#footer-outer #copyright li a, #header-secondary-outer #social li a {
+    display: block;
+    height: 24px;
+    position: relative;
+    transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    background-position: center top;
+}
+
+#footer-outer #copyright li a i, #header-secondary-outer #social li a i {
+    color: #666666;
+    transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+}
+
+#footer-outer #copyright li a i:hover {
+    color: #27CFC3;
+}
+
+#footer-outer #copyright li a.vimeo, #footer-outer #copyright li a.behance, #header-secondary-outer #social li a.behance, #header-secondary-outer #social li a.vimeo {
+    background-color: #666;
+}
+
+#footer-outer #copyright li a.vimeo:hover, #footer-outer #copyright li a.behance:hover, #header-secondary-outer #social li a.behance:hover, #header-secondary-outer #social li a.vimeo:hover {
+    background-color: #27CFC3;
+}
+
+#footer-outer #copyright p {
+    margin-top: 3px;
+}
+
+#footer-outer #copyright .col ul {
+    float: right;
+}
+
+#footer-outer #copyright li a.facebook { width: 12px;}
+#footer-outer #copyright li a.twitter { width: 20px;}
+#footer-outer #copyright li a.dribbble { width: 24px;}
+#footer-outer #copyright li a.google-plus { width: 20px;}
+#footer-outer #copyright li a.pinterest { width: 17px;}
+#footer-outer #copyright li a.rss { width: 18px;}
+#footer-outer #copyright li a.vimeo { width: 20px; text-indent: -9999px;}
+#footer-outer #copyright li a.tumblr { width: 21px;}
+#footer-outer #copyright li a.youtube { width: 21px;}
+#footer-outer #copyright li a.linkedin { width: 19px;}
+#footer-outer #copyright li a.behance { width: 27px; text-indent: -9999px;}
+#footer-outer #copyright li a.instagram { width: 20px;}
+
+#footer-outer #copyright #social .facebook, #footer-outer #copyright #social .facebook span { background-image: url(http://petesmart.co.uk/new/wp-content/themes/salient/img/icons/social/facebook.png); }
+#footer-outer #copyright #social .twitter, #footer-outer #copyright #social .twitter span { background-image: url(http://petesmart.co.uk/new/wp-content/themes/salient/img/icons/social/twitter.png); }
+#footer-outer #copyright #social .vimeo, #footer-outer #copyright #social .vimeo span { background-image: url(http://petesmart.co.uk/new/wp-content/themes/salient/img/icons/social/vimeo.png); }
+#footer-outer #copyright #social .dribbble, #footer-outer #copyright #social .dribbble span { background-image: url(http://petesmart.co.uk/new/wp-content/themes/salient/img/icons/social/dribbble.png); }
+#footer-outer #copyright #social .rss, #footer-outer #copyright #social .rss span { background-image: url(http://petesmart.co.uk/new/wp-content/themes/salient/img/icons/social/rss.png); }
+#footer-outer #copyright #social .skype, #footer-outer #copyright #social .skype span { background-image: url(http://petesmart.co.uk/new/wp-content/themes/salient/img/icons/social/skype.png); }
+#footer-outer #copyright #social .pinterest, #footer-outer #copyright #social .pinterest span { background-image: url(http://petesmart.co.uk/new/wp-content/themes/salient/img/icons/social/pinterest.png); }
+#footer-outer #copyright #social .google-plus, #footer-outer #copyright #social .google-plus span { background-image: url(http://petesmart.co.uk/new/wp-content/themes/salient/img/icons/social/google-plus.png); }
+#footer-outer #copyright #social .tumblr, #footer-outer #copyright #social .tumblr span { background-image: url(http://petesmart.co.uk/new/wp-content/themes/salient/img/icons/social/tumblr.png); }
+#footer-outer #copyright #social .youtube, #footer-outer #copyright #social .youtube span { background-image: url(http://petesmart.co.uk/new/wp-content/themes/salient/img/icons/social/youtube.png); }
+#footer-outer #copyright #social .linkedin, #footer-outer #copyright #social .linkedin span { background-image: url(http://petesmart.co.uk/new/wp-content/themes/salient/img/icons/social/linked-in.png);  }
+#footer-outer #copyright #social .behance, #footer-outer #copyright #social .behance span, #header-secondary-outer #social .behance, #header-secondary-outer #social .behance span { background-image: url(http://petesmart.co.uk/new/wp-content/themes/salient/img/icons/social/behance.png);  }
+#footer-outer #copyright #social .instagram, #footer-outer #copyright #social .instagram span { background-image: url(http://petesmart.co.uk/new/wp-content/themes/salient/img/icons/social/instagram.png);  }
+
+#header-secondary-outer #social .vimeo, #header-secondary-outer #social .vimeo span { background-image: url(http://petesmart.co.uk/new/wp-content/themes/salient/img/icons/social/vimeo-header.png); }
+#header-secondary-outer #social .behance, #header-secondary-outer #social .behance span { background-image: url(http://petesmart.co.uk/new/wp-content/themes/salient/img/icons/social/behance-header.png); }
+
+
+#footer-outer i, #header-secondary-outer #social i {
+    font-size: 20px;
+    width: auto;
     background-color: transparent!important;
-    border-radius: 0px!important;
 }
 
-.portfolio-items .col .work-item .work-info a.pp {
-    display: none!important;
+#footer-outer #copyright i.icon-be {
+    font-size: 24px;
 }
 
+#header-secondary-outer #social li .icon-be {
+    font-size: 18px!important;
+}
+header#top #logo {
+    width: auto;
+    max-width: none;
+    display: block;
+    line-height: 22px;
+    font-size: 22px;
+    letter-spacing: -1.5px;
+    color: #444444;
+    font-family: 'OpenSansSemibold';
+}
 
-a{
-    text-decoration:none;
+.comment input{
+    width: 510px;
+    display: inline-block;
+    *display: inline;
+    /* IE7 inline-block hack */
+
+    *zoom: 1;
+    margin-bottom: 0;
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+
+.comment textarea{
+    width: 510px;
+    display: inline-block;
+    *display: inline;
+    /* IE7 inline-block hack */
+
+    *zoom: 1;
+    margin-bottom: 0;
+    vertical-align: middle;
+    padding:4px;
 }
