@@ -5,3 +5,4 @@
         <a href="@{EntryR (categoryName category) (entryIdent post)}">#{entryTitle post}
         \ in #{categoryName category} am #{entryDate post}
         <br>
+      
