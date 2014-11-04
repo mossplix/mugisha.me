@@ -457,7 +457,6 @@ code > span.fu { color: #06287e; }
 code > span.er { color: #ff0000; font-weight: bold; }
 
  .post-meta  {
-    float: left;
     display: inline!important;
     text-transform: capitalize!important;
     font-family: 'OpenSansRegular'!important;
